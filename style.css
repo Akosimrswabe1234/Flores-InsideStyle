@@ -545,6 +545,16 @@ margin-bottom: 2.5rem;
   right: 3rem;
 
 }
+/* APBM */
+@media screen and (max-width: 520px) {
+  .aboutbanner__left{
+    display: none;
+  }
+  .aboutbanner__right h1{
+    font-size: 4rem;
+  }
+}
+
 
 /* LATEST STYLE BANNER */
 .latestBanner{
@@ -555,11 +565,11 @@ margin-bottom: 2.5rem;
 
 .latestBanner__wrapper{
   display: grid;
-  grid-template-columns: 42rem 42rem 42rem;
+  grid-template-columns: 40rem 40rem 40rem ;
   margin-top: 2rem;
   align-items: center;
   justify-content: center;
-  gap: 5rem;
+  gap: 1rem;
 }
 
 .latestBanner__card{
@@ -618,9 +628,94 @@ margin-bottom: 2.5rem;
   margin-bottom: 1rem;
 }
 
+@media screen and (max-width:520px) {
+  .latestBanner h2::after{
+    display: none;
+  }
+  .latestBanner__wrapper{
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+}
+@media screen and (max-width:520px) {
+  .footer__wrapper{
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+}
+
+/*catalog*/
+
+.catalogbanner__bg {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+  url(./img/catalog-banner.png);
+height: 100vh;
+background-size: cover;
+background-repeat: no-repeat;
 
 
+display: flex;
+flex-direction:  column;
+justify-content: center;
+text-align: center;
+}
 
+.catalogbanner h1{
+  font-size: 7rem;
+  font-weight: 700;
+  color: var(--clr-primary);
+}
+
+.catalogbanner p {
+  font-size: 3rem;
+  line-height: 2.5rem;
+  
+}
+/*  INTERIOR PACKAGE BANNER */
+.package__wrapper h1{
+  color: var(--clr-primary);
+  font-size: 6rem;
+  font-weight: 700;
+  text-align: center;
+}
+.package__theme{
+  background: var(--clr-semi-light);  
+  padding: 5rem;
+  display: flex;
+  gap: 1rem;
+
+
+  .package__left{
+    width: 500rem;
+    margin-left: 25rem;
+  }
+
+  .package__right h2{
+  
+  color: var(--clr-primary);
+  font-size: 6rem;
+  font-weight: 700;
+  display: flex;
+  margin-right: 25rem;
+  margin-left: 10rem;
+  margin-bottom: 4rem;
+  }
+
+  .package__right p{
+    text-align: justify;
+    margin-right: 25rem;
+  }
+
+
+}
 /*Repetable*/
 
 .btn{
