@@ -211,7 +211,7 @@ gap: 2rem;
         transition: .5s ease ;
     }
     .toggle__menu.open span:last-child{
-      transform: translate(0, -6px) rotate(-225deg);
+      transform: translate(0, -5px) rotate(-225deg);
       transition: .5s ease ;
     }
   }
@@ -489,8 +489,138 @@ color: var(--clr-semi-light);
     justify-content: center;
 
   }
+
+}
+
+/*About PAge  BAnejb*/
+.aboutbanner{
+  padding: 3rem 0;
+
+}
+
+.about__wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+}
+
+.aboutbanner__right{
+  max-width: 85rem;
+
+}
+.aboutbanner__right h1{ 
+font-size: 7rem;
+font-weight: 700;
+letter-spacing: 2rem;
+margin-bottom: 2.5rem;
+}
+
+.aboutbanner__right ul{
+    display: flex;
+    gap: 1rem;
+   
+}
+
+.aboutbanner__right p{
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+.aboutbanner__right ul li a{
+  color: var(--clr-dark) ;
+  font-size: 2rem;
+}
+.aboutbanner__left small{
+  padding-left: 3rem;
+}
+.aboutbanner__left small::before{
+  display: inline-block;
+  position: relative;
+  content: " ";
+  background-color: var(--clr-dark);
+  width: 33.5rem;
+  height: .2rem;  
+  bottom: .3rem;
+  right: 3rem;
+
+}
+
+/* LATEST STYLE BANNER */
+.latestBanner{
+  padding: 3rem;
+  background-color: var(--clr-dark);
   
 }
+
+.latestBanner__wrapper{
+  display: grid;
+  grid-template-columns: 42rem 42rem 42rem;
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.latestBanner__card{
+
+  background-color: var(--clr-light);
+  max-width: 40rem;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  gap: 2.5rem;
+}
+
+.latestBanner__card img{
+  width: 40rem;
+}
+
+.latestBanner__card--content{
+  padding: 1rem;
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: justify;
+}
+
+.latestBanner__card--content h3{
+  color: var(--clr-secondary);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.latestBanner__card--content p{
+  font-weight: 500;
+  margin-bottom:  5rem;
+}
+
+.latestBanner h1{
+  color: var(--clr-primary);
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+
+}
+
+.latestBanner h2{
+  color: var(--clr-light);
+  font-size: 1.5rem;
+  font-weight: 1rem;
+  margin-bottom: 2rem;
+
+}
+
+.latestBanner__card{
+  background-color: var(--clr-light);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  max-width: 40rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+
+
 /*Repetable*/
 
 .btn{
